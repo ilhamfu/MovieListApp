@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Dicoding Submission 2</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="movie_list_tab">List of Movies</string>
+    <string name="tv_list_tab">List of TV Shows</string>
+    <string name="movie_item_content_desc">Movie Poster</string>
+</resources>
