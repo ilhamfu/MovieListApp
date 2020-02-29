@@ -1,7 +1,17 @@
 <resources>
-    <string name="app_name">Dicoding Submission 2</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name" translatable="false">Dicoding Submission 2</string>
     <string name="movie_list_tab">List of Movies</string>
     <string name="tv_list_tab">List of TV Shows</string>
-    <string name="movie_item_content_desc">Movie Poster</string>
+    <string name="movie_poster_content_desc">Movie Poster</string>
+    <string name="tv_show_poster_content_desc">Tv Show Poster</string>
+    <string name="star_icon_content_desc">Star Icon</string>
+    <string name="text_title">Tittle</string>
+    <string name="text_eps" translatable="false">Eps</string>
+    <string name="text_release">Release</string>
+    <string name="text_air">Aired at</string>
+    <string name="text_total_episode">Total Episode</string>
+    <string name="text_desc">Description</string>
+    <string name="menu_setting">Setting</string>
+    <string name="text_read_more">Read More</string>
+
 </resources>

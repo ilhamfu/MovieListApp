@@ -16,7 +16,7 @@
 
         android:id="@+id/iv_tv_show_item_img"
 
-        android:contentDescription="@string/movie_item_content_desc"
+        android:contentDescription="@string/tv_show_poster_content_desc"
 
         android:layout_width="100dp"
         android:layout_height="0dp"
@@ -34,7 +34,7 @@
         android:layout_width="24dp"
         android:layout_height="24dp"
 
-        android:contentDescription="Image Star Icon"
+        android:contentDescription="@string/star_icon_content_desc"
 
         android:layout_marginStart="8dp"
 
@@ -83,19 +83,8 @@
         app:layout_constraintStart_toEndOf="@id/iv_tv_show_item_star_icon"
         app:layout_constraintTop_toBottomOf="@id/tv_tv_show_item_title"
 
-        android:text="First Episode : "
+        android:text="@string/text_air"
         />
-    <TextView
-        android:id="@+id/tv_tv_show_item_airing"
-
-        android:layout_marginStart="8dp"
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@id/tv_show_item_airing_text"
-        app:layout_constraintTop_toBottomOf="@id/tv_tv_show_item_title" />
 
       <TextView
 
@@ -103,35 +92,56 @@
 
           android:layout_marginStart="8dp"
 
-          android:layout_marginTop="5dp"
+          android:layout_marginTop="2dp"
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toEndOf="@id/iv_tv_show_item_star_icon"
         app:layout_constraintTop_toBottomOf="@id/tv_tv_show_item_airing"
 
-        android:text="Total Episode : "
+        android:text="@string/text_total_episode"
         android:textSize="12sp"
+        />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/tv_show_list_label_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="end"
+        app:constraint_referenced_ids="tv_show_item_airing_text,tv_tv_show_episode_text"
         />
 
     <TextView
 
         android:id="@+id/tv_tv_show_episode"
 
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="2dp"
+
+        android:layout_marginStart="5dp"
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@id/tv_show_item_airing_text"
+        app:layout_constraintStart_toEndOf="@id/tv_show_list_label_barrier"
         app:layout_constraintTop_toBottomOf="@id/tv_tv_show_item_airing"
         android:textSize="12sp"
         />
+
+    <TextView
+        android:id="@+id/tv_tv_show_item_airing"
+
+        android:layout_marginStart="5dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/tv_show_list_label_barrier"
+        app:layout_constraintTop_toBottomOf="@id/tv_tv_show_item_title" />
     <TextView
 
         android:id="@+id/tv_tv_show_item_desc"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="15dp"
 
         app:layout_constraintTop_toBottomOf="@id/tv_tv_show_item_rating"
         app:layout_constraintStart_toEndOf="@id/iv_tv_show_item_img"
@@ -159,7 +169,7 @@
 
         android:layout_marginStart="8dp"
 
-        android:text="Read More"
+        android:text="@string/text_read_more"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

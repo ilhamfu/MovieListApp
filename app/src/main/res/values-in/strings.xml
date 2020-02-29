@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="movie_list_tab">Daftar Film</string>
+    <string name="tv_list_tab">Daftar Serial TV</string>
+    <string name="movie_poster_content_desc">Poster Film</string>
+    <string name="tv_show_poster_content_desc">Poster Serial TV</string>
+    <string name="star_icon_content_desc">Simbol bintang</string>
+    <string name="text_title">Judul</string>
+    <string name="text_release">Rilis</string>
+    <string name="text_air">Tayang Perdana</string>
+    <string name="text_total_episode">Total Episode</string>
+    <string name="text_desc">Deskripsi</string>
+    <string name="menu_setting">Pengaturan</string>
+    <string name="text_read_more">Lebih Banyak</string>
+
+</resources>

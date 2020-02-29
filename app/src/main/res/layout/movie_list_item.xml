@@ -16,7 +16,7 @@
 
         android:id="@+id/iv_movie_item_img"
 
-        android:contentDescription="@string/movie_item_content_desc"
+        android:contentDescription="@string/movie_poster_content_desc"
 
         android:layout_width="100dp"
         android:layout_height="0dp"
@@ -34,7 +34,7 @@
         android:layout_width="24dp"
         android:layout_height="24dp"
 
-        android:contentDescription="Image Star Icon"
+        android:contentDescription="@string/star_icon_content_desc"
 
         android:layout_marginStart="8dp"
 
@@ -83,13 +83,15 @@
         app:layout_constraintStart_toEndOf="@id/iv_movie_item_star_icon"
         app:layout_constraintTop_toBottomOf="@id/tv_movie_item_title"
 
-        android:text="Release : "
+        android:text="@string/text_release"
         />
     <TextView
         android:id="@+id/tv_movie_item_release"
 
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+
+        android:layout_marginStart="5dp"
 
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -128,7 +130,7 @@
 
         android:layout_marginStart="8dp"
 
-        android:text="Read More"
+        android:text="@string/text_read_more"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

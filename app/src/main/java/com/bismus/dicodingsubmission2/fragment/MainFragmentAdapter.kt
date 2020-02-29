@@ -1,11 +1,13 @@
 package com.bismus.dicodingsubmission2.fragment
 
+import android.content.Context
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentPagerAdapter
 import androidx.fragment.app.FragmentManager
+import com.bismus.dicodingsubmission2.R
 
 
-class MainFragmentAdapter(framgent:FragmentManager):FragmentPagerAdapter(framgent,FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT){
+class MainFragmentAdapter(framgent:FragmentManager,private val context: Context):FragmentPagerAdapter(framgent,BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT){
     override fun getCount(): Int {
         return 2
     }
@@ -23,12 +25,15 @@ class MainFragmentAdapter(framgent:FragmentManager):FragmentPagerAdapter(framgen
     }
 
     override fun getPageTitle(position: Int): CharSequence? {
+
+
+
         return when (position){
             0->{
-                "List of Movies"
+                context.resources.getString(R.string.movie_list_tab)
             }
             else -> {
-                return "List of TV Shows"
+                return context.resources.getString(R.string.tv_list_tab)
             }
 
         }

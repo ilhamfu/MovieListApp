@@ -152,7 +152,7 @@ class MovieListFragment : Fragment() {
     }
 
     private fun MovieClicked(movie: MovieItem) {
-        Toast.makeText(context,movie.title,Toast.LENGTH_LONG).show()
+
         val intent = Intent(context,MovieDetailActivity::class.java)
         intent.putExtra(MovieDetailActivity.MOVIE_DATA,movie)
         startActivity(intent)
